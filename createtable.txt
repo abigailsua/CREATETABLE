@@ -1,0 +1,44 @@
+create table user (
+	user_id VARCHAR(50),
+	password VARCHAR(50),
+	name VARCHAR(50),
+	gender VARCHAR(50),
+	DOB DATE,
+	email VARCHAR(50),
+	mobile_no VARCHAR(50),
+	city VARCHAR(50),
+	state VARCHAR(50)
+);
+
+
+create table TRAIN (
+	train_no VARCHAR(50),
+	train_name VARCHAR(50)
+);
+
+
+create table TICKET (
+	Ticket_id VARCHAR(50),
+	Train_no VARCHAR(5),
+	User_id VARCHAR(9),
+	Status VARCHAR(7),
+	Seat_no VARCHAR(2),
+	Passenger_id VARCHAR(50),
+	Timeslot VARCHAR(5),
+	Date DATE
+);
+
+
+create table TRAIN_SCHEDULE (
+	Train_no VARCHAR(2),
+	Timeslot VARCHAR(50),
+	Destination VARCHAR(50),
+	Ticket_price VARCHAR(50),
+	Duration VARCHAR(50)
+);
+
+
+create table TRAIN_SEATS (
+	train_no VARCHAR(2),
+	seat_no VARCHAR(50)
+);
